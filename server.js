@@ -6,10 +6,9 @@ const http = require('http');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const { Server } = require('socket.io');
-
-const server = http.createServer(app);
-const { Server } = require('socket.io');
 const io = new Server(server);
+const server = http.createServer(app);
+
 
 
 // Middleware
@@ -100,9 +99,6 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('typing', user);
     });
 
-    socket.on('disconnect', () => {
-        console.log('❌ User disconnected');
-    });
     socket.on('disconnect', () => {
         console.log('❌ User disconnected');
     });
