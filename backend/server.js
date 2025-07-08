@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 const express = require('express');
 const path = require('path');
 const http = require('http');
@@ -22,7 +23,7 @@ app.get('/', (req, res) => {
 const USERS_FILE = path.join(__dirname, 'users.json');
 
 // Register route
-app.post('/register', (req, res) => {
+app.post('/register', async (req, res) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
@@ -39,13 +40,18 @@ app.post('/register', (req, res) => {
         return res.status(409).send('Username already taken');
     }
 
-    users.push({ username, password });
+    // Hash the password before saving
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    users.push({ username, password: hashedPassword });
     fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
     res.redirect(`/login.html`);
 });
 
+
 // Login route
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
@@ -57,12 +63,16 @@ app.post('/login', (req, res) => {
         users = JSON.parse(fs.readFileSync(USERS_FILE));
     }
 
-    const matched = users.find(u => u.username === username && u.password === password);
-    if (!matched) {
+    const user = users.find(u => u.username === username);
+    if (!user) {
         return res.status(401).send('Invalid credentials');
     }
 
-    // Redirect to chat.html with query param
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) {
+        return res.status(401).send('Invalid credentials');
+    }
+
     res.redirect(`/chat.html?user=${encodeURIComponent(username)}`);
 });
 
@@ -70,19 +80,19 @@ app.post('/login', (req, res) => {
 io.on('connection', (socket) => {
     console.log('✅ A user connected');
 
-    // Handle chat messages
-    socket.on('chat message', (msg) => {
-        const now = new Date();
-        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    socket.on('join', (username) => {
+        console.log(`User joined: ${username}`);
+        socket.username = username;  // associate username with this socket
+    });
 
+    socket.on('chat message', (msg) => {
         io.emit('chat message', {
-            user: socket.username || 'Guest',
+            user: socket.username || 'Guest', // use socket.username here
             text: msg,
             time: new Date()
         });
     });
 
-    // Handle typing
     socket.on('typing', (user) => {
         socket.username = user;
         socket.broadcast.emit('typing', user);
@@ -91,7 +101,19 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('❌ User disconnected');
     });
+    socket.on('disconnect', () => {
+    console.log('❌ User disconnected');
 });
+socket.on('message read', (user) => {
+    socket.broadcast.emit('message read', user);
+});
+});
+
+
+// Handle typing
+
+
+
 
 // Start server
 const PORT = process.env.PORT || 3000;

@@ -86,10 +86,15 @@
   <h2 class="chat-heading">Welcome to the Chat Room 💬</h2>
 
     <h3 id="userInfo" style="text-align:center; color: #333;"></h3>
-    <div id="typingIndicator" style="height: 24px; font-style: italic; padding: 4px 12px; color: #888;"></div>
+    <button id="darkModeToggle" style="position: absolute; top: 10px; right: 20px; padding: 8px 12px; cursor: pointer;">
+  🌙 Dark Mode
+   </button>
 
+   
   <div id="chat-container">
     <div id="messages"></div>
+
+    <div id="typingIndicator" style="height: 24px; font-style: italic; padding: 4px 12px; color: #888;"></div>
 
     <div id="input-area">
       <input id="messageInput" type="text" placeholder="Type a message">
@@ -102,6 +107,8 @@
     </div>
 
     <div id="gifResults"></div>
+    <h3 id="userInfo" style="text-align:center; color: #333;"></h3>
+<button id="logoutBtn" style="display:block; margin: 0 auto 10px; padding: 6px 12px;">🚪Logout</button>
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
