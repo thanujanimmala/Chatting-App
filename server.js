@@ -1,13 +1,17 @@
-const bcrypt = require('bcryptjs');
 const express = require('express');
 const app = express();
 const path = require('path');
 const http = require('http');
 const fs = require('fs');
+const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
+
+// ✅ FIRST: create the server
+const server = http.createServer(app);
+
+// ✅ THEN: import socket.io and pass the server to it
 const { Server } = require('socket.io');
 const io = new Server(server);
-const server = http.createServer(app);
 
 
 
