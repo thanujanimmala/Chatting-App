@@ -1,14 +1,16 @@
 const bcrypt = require('bcryptjs');
 const express = require('express');
+const app = express();
 const path = require('path');
 const http = require('http');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const { Server } = require('socket.io');
 
-const app = express();
 const server = http.createServer(app);
+const { Server } = require('socket.io');
 const io = new Server(server);
+
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -102,11 +104,11 @@ io.on('connection', (socket) => {
         console.log('❌ User disconnected');
     });
     socket.on('disconnect', () => {
-    console.log('❌ User disconnected');
-});
-socket.on('message read', (user) => {
-    socket.broadcast.emit('message read', user);
-});
+        console.log('❌ User disconnected');
+    });
+    socket.on('message read', (user) => {
+        socket.broadcast.emit('message read', user);
+    });
 });
 
 
