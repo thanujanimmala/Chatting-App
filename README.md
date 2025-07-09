@@ -97,7 +97,7 @@ http://localhost:10000
 Create a .env file in the project root with the following:
 
 
-PORT=10000
+PORT=10000  
 SESSION_SECRET=your_secret_key
 
 ```pgsql
