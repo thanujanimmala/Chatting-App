@@ -101,10 +101,12 @@ Create a .env file in the project root with the following:
 PORT=10000
 SESSION_SECRET=your_secret_key
 ```
-• PORT: Server port (default 10000)
+```pgsql
+•
+- PORT: Server port (default 10000)  
 
-• SESSION_SECRET: Secret key for session management and security
-
+- SESSION_SECRET: Secret key for session management and security
+```
 
 # 🧑‍💻 How to Use
 ---
