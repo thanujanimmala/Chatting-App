@@ -1,7 +1,7 @@
 # 💬 Real-Time Chat Application
 ---
  A real-time chat app built with Node.js, Express, and Socket.io.
-Users can register, login, and chat instantly with others in a clean and ##responsive interface. 🚀
+Users can register, login, and chat instantly with others in a clean and responsive interface. 🚀
 
 
 ## ✨ Features
