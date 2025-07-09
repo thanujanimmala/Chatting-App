@@ -159,7 +159,5 @@ Double-check .env file is correctly named and variables are loaded properly 🔍
 • 🔔 Notifications for new messages
 
 
-# 📄 License
----
- This project is licensed under the [MIT License](LICENSE).
+
 
