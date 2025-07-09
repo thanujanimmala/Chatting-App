@@ -26,16 +26,17 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 # 🔗 Live Demo
 ---
   Try the app here:
-  https://chatting-app-z3j8.onrender.com
+  [https://chatting-app-z3j8.onrender.com](https://chatting-app-z3j8.onrender.com)
+
 
 
 # 🛠 Technologies Used
 ---
-• Backend: Node.js, Express, Socket.io, bcryptjs
+• **Backend**: Node.js, Express, Socket.io, bcryptjs
 
-• Frontend: HTML, CSS, JavaScript
+• **Frontend**: HTML, CSS, JavaScript
 
-• Deployment: Render.com
+• **Deployment**: Render.com
 
 
 
