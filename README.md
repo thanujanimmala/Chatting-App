@@ -37,7 +37,6 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 
 • Deployment: Render.com
 
-• Data Storage: (Add here if using JSON, MongoDB, or any other DB)
 
 
 # 📂 Project Structure
