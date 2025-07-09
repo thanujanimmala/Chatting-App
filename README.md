@@ -66,7 +66,7 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 ---
 ## Prerequisites
 
-• Node.js (v12+ recommended)
+• Node.js (v12+ recommended)   
 • npm (comes with Node.js)
 
 # Installation
