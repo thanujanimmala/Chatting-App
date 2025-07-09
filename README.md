@@ -59,12 +59,12 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 
 # 🚀 Getting Started
 
-## Prerequisites
+## 📦 Prerequisites
 
 • Node.js (v12+ recommended)   
 • npm (comes with Node.js)
 
-# Installation
+# ⚙️ Installation
 ---
 1.Clone the repository
 
