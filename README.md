@@ -161,5 +161,5 @@ Double-check .env file is correctly named and variables are loaded properly 🔍
 
 # 📄 License
 ---
- This project is licensed under the MIT License — see the LICENSE file for details.
+ This project is licensed under the [MIT License].
 
