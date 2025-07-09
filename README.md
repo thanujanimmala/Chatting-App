@@ -5,7 +5,7 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 ---
 
 # ✨ Features
----
+
  • 📝 User Registration & Login with secure password hashing using bcryptjs
 
  • 🕒 Display message timestamps
@@ -21,14 +21,13 @@ Users can register, login, and chat instantly with others in a clean and ##respo
  • 🔐 Passwords are securely hashed for user safety
 
  • ☁️ Deployed on Render.com for easy access anywhere
-
+---
 
 # 🔗 Live Demo
----
 
  Try the app here:
  https://chatting-app-z3j8.onrender.com
-
+---
 
 # 🛠 Technologies Used
 
@@ -39,10 +38,9 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 • Deployment: Render.com
 
 • Data Storage: (Add here if using JSON, MongoDB, or any other DB)
-
+---
 
 # 📂 Project Structure
----
 
 <pre>```bash/chatting-app
   ├── server.js            # Main server file
@@ -57,11 +55,11 @@ Users can register, login, and chat instantly with others in a clean and ##respo
       ├── login.html       # Login page
       ├── register.html    # Registration page
       └── chat.html        # Chat interface page ```</pre>
-
+---
 
 
 # 🚀 Getting Started
----
+
 ## Prerequisites
 
 • Node.js (v12+ recommended)   
@@ -112,10 +110,9 @@ SESSION_SECRET=your_secret_key
 • PORT: Server port (default 10000)
 
 • SESSION_SECRET: Secret key for session management and security
-
+---
 
 # 🧑‍💻 How to Use
----
 
 1. Register a new account by filling out the registration form 📝
 
@@ -126,10 +123,9 @@ SESSION_SECRET=your_secret_key
 4. See messages update instantly without page reloads ⚡
 
 5. Log out when done or switch accounts 🔄
-
+---
 
 # 🛠 Key Code Highlights
----
 
 • Passwords are hashed with bcryptjs before saving for security 🔐
 
@@ -138,9 +134,9 @@ SESSION_SECRET=your_secret_key
 • Express serves static frontend files and APIs 🚦
 
 • Sessions track logged-in users securely with cookies and session middleware 🔑
+---
 
 # ❓ Troubleshooting
----
 
 • 502 Bad Gateway on Render?
 
@@ -157,20 +153,19 @@ Verify Express middleware for serving static files is properly configured 📂
 • Environment variables not working?
 
 Double-check .env file is correctly named and variables are loaded properly 🔍
-
+---
 
 #🚧 Future Enhancements
----
 
 • 🔐 Private one-on-one messaging between users
 
 • 💾 Persist chat history using a database (MongoDB, etc.)
 
 • 🔔 Notifications for new messages
+---
 
 
 # 📄 License
----
 
  This project is licensed under the MIT License — see the LICENSE file for details.
-
+---
