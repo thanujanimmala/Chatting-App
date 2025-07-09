@@ -42,7 +42,8 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 
 # 📂 Project Structure
 ---
-<pre>```bash/chatting-app
+<pre>```bash
+ /chatting-app
   ├── server.js            # Main server file
   ├──users.json
   └── public/              # Frontend static files
@@ -52,7 +53,8 @@ Users can register, login, and chat instantly with others in a clean and ##respo
       │   └── chat.js      # Frontend JS for chat functionality
       ├── login.html       # Login page
       ├── register.html    # Registration page
-      └── chat.html        # Chat interface page ```</pre>
+      └── chat.html        # Chat interface page 
+ ```</pre>
 
 
 # 🚀 Getting Started
