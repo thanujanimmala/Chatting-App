@@ -67,15 +67,14 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 
 ```bash
 
-git clone <repository-url>
-cd chatting-app
+git clone https://github.com/thanujanimmala/Chatting-App.git
+cd Chatting-App
 ```
 
 2.Install dependencies
 
 ```bash
 
-Copy code
 npm install
 ```
 
