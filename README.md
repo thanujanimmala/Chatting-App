@@ -43,9 +43,7 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 ---
 <pre>```bash/chatting-app
   ├── server.js            # Main server file
-  ├── routes.js            # API routes (if any)
-  ├── controllers/         # (Optional) Business logic handlers
-  ├── models/              # (Optional) Data models
+  ├──users.json
   └── public/              # Frontend static files
       ├── css/
       │   └── style.css    # Stylesheet
