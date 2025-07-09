@@ -4,7 +4,7 @@
 Users can register, login, and chat instantly with others in a clean and ##responsive interface. 🚀
 
 
-# ✨ Features
+## ✨ Features
 ---
  • 📝 User Registration & Login with secure password hashing using bcryptjs
 
@@ -23,14 +23,14 @@ Users can register, login, and chat instantly with others in a clean and ##respo
  • ☁️ Deployed on Render.com for easy access anywhere
 
 
-# 🔗 Live Demo
+## 🔗 Live Demo
 ---
   Try the app here:
   [https://chatting-app-z3j8.onrender.com](https://chatting-app-z3j8.onrender.com)
 
 
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 ---
 • **Backend**: Node.js, Express, Socket.io, bcryptjs
 
@@ -40,7 +40,7 @@ Users can register, login, and chat instantly with others in a clean and ##respo
 
 
 
-# 📂 Project Structure
+## 📂 Project Structure
 ---
 <pre>```bash
  /chatting-app
@@ -57,14 +57,14 @@ Users can register, login, and chat instantly with others in a clean and ##respo
  ```</pre>
 
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## 📦 Prerequisites
+### 📦 Prerequisites
 
 • Node.js (v12+ recommended)   
 • npm (comes with Node.js)
 
-# ⚙️ Installation
+## ⚙️ Installation
 ---
 1.Clone the repository
 
@@ -95,7 +95,7 @@ Open your browser and go to:
 http://localhost:10000
 ```
 
-## ⚙️ Environment Variables
+### ⚙️ Environment Variables
 
 Create a .env file in the project root with the following:
 
@@ -110,7 +110,7 @@ SESSION_SECRET=your_secret_key
 - SESSION_SECRET: Secret key for session management and security
 ```
 
-# 🧑‍💻 How to Use
+## 🧑‍💻 How to Use
 ---
 1. Register a new account by filling out the registration form 📝
 
@@ -123,7 +123,7 @@ SESSION_SECRET=your_secret_key
 5. Log out when done or switch accounts 🔄
 ---
 
-# 🛠 Key Code Highlights
+## 🛠 Key Code Highlights
 ---
 • Passwords are hashed with bcryptjs before saving for security 🔐
 
@@ -134,7 +134,7 @@ SESSION_SECRET=your_secret_key
 • Sessions track logged-in users securely with cookies and session middleware 🔑
 
 
-# ❓ Troubleshooting
+## ❓ Troubleshooting
 ---
 • 502 Bad Gateway on Render?
 
@@ -153,7 +153,7 @@ Verify Express middleware for serving static files is properly configured 📂
 Double-check .env file is correctly named and variables are loaded properly 🔍
 
 
-#🚧 Future Enhancements
+## 🚧 Future Enhancements
 ---
 • 🔐 Private one-on-one messaging between users
 
