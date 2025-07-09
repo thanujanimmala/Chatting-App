@@ -1,21 +1,21 @@
 # 💬 Real-Time Chat Application
 ---
-## A real-time chat app built with Node.js, Express, and Socket.io.
-## Users can register, login, and chat instantly with others in a clean and ##responsive interface. 🚀
+ A real-time chat app built with Node.js, Express, and Socket.io.
+Users can register, login, and chat instantly with others in a clean and ##responsive interface. 🚀
 
 # ✨ Features
 ---
-## 📝 User Registration & Login with secure password hashing using bcryptjs
+ 📝 User Registration & Login with secure password hashing using bcryptjs
 
-## 🕒 Display message timestamps
+ 🕒 Display message timestamps
 
-## 🌙 Dark mode toggle
+ 🌙 Dark mode toggle
 
-## ⌨️ Typing indicators to show when someone is typing
+ ⌨️ Typing indicators to show when someone is typing
 
-## ⚡ Real-time Messaging powered by Socket.io WebSockets
+ ⚡ Real-time Messaging powered by Socket.io WebSockets
 
-## 🎨 Responsive, clean UI with a light green theme
+ 🎨 Responsive, clean UI with a light green theme
 
 ## 🔐 Passwords are securely hashed for user safety
 
